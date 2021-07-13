@@ -12,9 +12,12 @@ var express = require('express'),
   seedDB = require('./seeds'),
   Item = require('./models/item'),
   middleware = require('./middleware');
+var url = process.env.DATABASEURL || 'mongodb://localhost/yelp_camp_v10';
+/*
 var url =
   process.env.DATABASEURL ||
   'mongodb+srv://Mounika:mouni01234@cluster0-qoupc.mongodb.net/project?retryWrites=true&w=majority';
+  */
 mongoose.connect(url);
 app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({ extended: true }));
