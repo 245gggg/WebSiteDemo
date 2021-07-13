@@ -18,7 +18,7 @@ var url = process.env.DATABASEURL || 'mongodb://localhost/yelp_camp_v10';
 
 var url =
   process.env.DATABASEURL ||
-  'mongodb+srv://Mounika:mouni01234@cluster0-qoupc.mongodb.net/project?retryWrites=true&w=majority';
+  'mongodb+srv://Mounika_M:mouni01234@cluster0.4j1gn.mongodb.net/test';
 
 mongoose.connect(url);
 app.set('view engine', 'ejs');
